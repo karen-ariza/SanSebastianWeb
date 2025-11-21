@@ -1,0 +1,160 @@
+
+.fiestas-fondo {
+    width: 100%;
+    min-height: 950px;
+    position: relative;
+    padding: 20px 20px;
+    overflow: hidden;
+    background: linear-gradient(to right, #fcb6a6, #ffe695, #b2ffd2);
+}
+/* TÍTULO PRINCIPAL */
+.fiestas-fondo h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.0rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #b30000;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    animation: titleIn 0.8s ease both;
+}
+
+/* SUBTÍTULO (CORREGIDO) */
+.fiestas-fondo p {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CONTENEDOR DE TARJETAS EN 2 COLUMNAS */
+.fiestas-premium {
+    max-width: 1600px;     /* más ancho */
+    margin: auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas siempre */
+    gap: 40px;  /* separación entre tarjetas */
+    justify-items: center; /* centra la tarjeta que quede sola */
+}
+
+
+/* TARJETAS MÁS ANCHAS */
+.fiesta-card {
+    width: 100%;
+    max-width: 1500px;   /* controlar ancho */
+    
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform .3s ease, box-shadow .3s ease;
+    animation: fadeUp .9s ease both;
+}
+
+.fiesta-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+/* Imágenes desde CSS */
+.fiesta-1 .fiesta-img { background-image: url('../imagenes/Fsansebastian1.jpg'); }
+.fiesta-2 .fiesta-img { background-image: url('../imagenes/Fchande.jpg'); }
+.fiesta-3 .fiesta-img { background-image: url('../imagenes/Carnavales.jpg'); }
+.fiesta-4 .fiesta-img { background-image: url('../imagenes/Virgen.jpg'); }
+.fiesta-5 .fiesta-img { background-image: url('../imagenes/Cosecha.jpeg'); } 
+
+/* Config imagen */
+.fiesta-img {
+    background-size: cover;
+    background-position: center;
+    min-height: 260px;
+    filter: brightness(0.85);
+    transition: filter .3s ease;
+}
+
+.fiesta-card:hover .fiesta-img {
+    filter: brightness(1);
+}
+
+/* Texto */
+.fiesta-info {
+    padding: 30px 35px;
+}
+
+.fiesta-info h2 {
+    font-size: 1.9rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fiesta-info p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.fiesta-meta {
+    display: block;
+    font-size: .95rem;
+    color: #8a5b2e;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Animación tarjeta */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Título y subtítulo */
+.fiestas-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+    color: #1f1f1f;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    animation: titleIn 0.8s ease both;
+}
+
+.fiestas-sub {
+    text-align: center;
+    color: #555;
+    margin-top: -6px;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+    .fiestas-premium {
+        grid-template-columns: 1fr; /* 1 columna en celular */
+    }
+
+    .fiesta-card {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .fiesta-img {
+        height: 200px;
+    }
+
+    .fiesta-info h2 {
+        font-size: 1.6rem;
+    }
+}

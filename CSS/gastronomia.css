@@ -1,0 +1,249 @@
+.gastronomia-section{
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: -100px;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 950px;
+  background: linear-gradient(to right, #f3c035 0%, #fcfcfc 100%)
+}
+
+/* Intro */
+.gastronomia-section .gas-intro {
+  text-align: center;
+  margin: 100px auto 10px;
+  max-width: 1000px;
+  color: #000000;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+.gastronomia-section .gas-intro h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #b36d00;
+  margin-bottom: 10px;
+}
+
+.gastronomia-section .gas-intro p {
+  font-size: 1.1rem;
+  color: #000;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Wrapper / Container específicos */
+.gastronomia-section .gas-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gastronomia-section .gas-container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Card (específica) */
+.gastronomia-section .gas-card {
+  width: 90px;
+  border-radius: 2rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: none !important;
+}
+
+/* fila interna */
+.gastronomia-section .gas-row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* icono redondo */
+.gastronomia-section .gas-icon {
+  background: rgb(230, 157, 21);
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+/* descripcion interna (texto que aparece al seleccionar) */
+.gastronomia-section .gas-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 85px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.gastronomia-section .gas-description h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.gastronomia-section .gas-description p {
+  color: #ffffff;
+  padding-top: 5px;
+  font-weight: 200;
+  font-size: 12px;
+}
+/* hide native inputs (scoped) */
+.gastronomia-section input[type="radio"] {
+  display: none;
+}
+
+/* Cuando un radio está checado: la label siguiente (el card) puede crecer */
+/* selector: input:checked + label.gas-card */
+.gastronomia-section input[type="radio"]:checked + .gas-card {
+  width: 600px;
+}
+
+/* Mostrar la descripción dentro del card chequeado */
+.gastronomia-section input[type="radio"]:checked + .gas-card .gas-description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* 1 */
+.gastronomia-section .gas-card[for="g-c1"] { 
+  background-image: url('../imagenes/Yuca.jpg'); 
+  background-size: cover; 
+}
+
+/* 2 */
+.gastronomia-section .gas-card[for="g-c2"] { 
+  background-image: url('../imagenes/Pes.jpg'); 
+  background-size: cover; 
+}
+
+/* 3 */
+.gastronomia-section .gas-card[for="g-c3"] { 
+  background-image: url('../imagenes/Almo.jpeg'); 
+  background-size: cover; 
+}
+
+/* 4 */
+.gastronomia-section .gas-card[for="g-c4"] { 
+  background-image: url('../imagenes/sancocho.jpg'); 
+  background-size: cover; 
+}
+
+/* 5 */
+.gastronomia-section .gas-card[for="g-c5"] { 
+  background-image: url('../imagenes/arepas.jpg'); 
+  background-size: cover; 
+}
+
+/* 6 */
+.gastronomia-section .gas-card[for="g-c6"] { 
+  background-image: url('../imagenes/Huila.jpg'); 
+  background-size: cover; 
+}
+
+/* 7 */
+.gastronomia-section .gas-card[for="g-c7"] { 
+  background-image: url('../imagenes/Enyucado.jpg'); 
+  background-size: cover; 
+}
+
+/* 8 */
+.gastronomia-section .gas-card[for="g-c8"] { 
+  background-image: url('../imagenes/Arroz.jpg'); 
+  background-size: cover; 
+}
+
+/* 10 */
+.gastronomia-section .gas-card[for="g-c9"] { 
+  background-image: url('../imagenes/dulces.jpg'); 
+  background-size: cover; 
+}
+
+/* 11 */
+.gastronomia-section .gas-card[for="g-c10"] { 
+  background-image: url('../imagenes/chicha.jpg'); 
+  background-size: cover; 
+}
+.gastronomia-section .gas-card[for="g-c11"] { 
+  background-image: url('../imagenes/Jugos.webp'); 
+  background-size: cover; 
+}
+
+
+
+
+/* ================================
+   MÓVIL / TABLET — comportamiento deslizante
+   ================================ */
+@media (max-width: 768px) {
+  .gastronomia-section { padding: 15px; }
+
+  .gastronomia-section .gas-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gastronomia-section .gas-container {
+    display: flex;
+    overflow-x: auto;              /* permite deslizar lateral */
+    scroll-snap-type: x mandatory;  /* cada tarjeta se centra al soltar */
+    scroll-behavior: smooth;
+    padding: 12px;
+    gap: 12px;
+    height: auto;
+  }
+
+  .gastronomia-section .gas-description p {
+    font-size: 11px;
+  }
+
+  .gastronomia-section .gas-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gastronomia-section .gas-card {
+    flex: 0 0 85%;
+    height: 320px;
+    scroll-snap-align: center;
+    border-radius: 1rem;
+    transition: none;
+    min-width: 85%;
+  }
+
+  /* en móvil, mostrar siempre la descripción dentro de la tarjeta */
+  .gastronomia-section .gas-card .gas-description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+
+  .gastronomia-section input[type="radio"] { display: none !important; }
+  .gastronomia-section input[type="radio"]:checked + .gas-card { width: 85% !important; }
+}

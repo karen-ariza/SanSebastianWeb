@@ -1,0 +1,147 @@
+/* ===========================
+   HERO CON IMAGEN DE FONDO
+=========================== */
+.madera-hero {
+    width: 100%;
+    height: 380px;
+    background-image: url('../imagenes/maderabanner.jpg'); /* Cambia la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    text-align: center;
+}
+
+/* DEGRADADO OSCURO PARA QUE SE LEA EL TEXTO */
+.madera-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+/* TÍTULO ENCIMA DE LA IMAGEN */
+.madera-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    position: relative;
+    animation: fadeDown 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* ANIMACIÓN DEL TÍTULO */
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   CONTENIDO PRINCIPAL
+=========================== */
+
+.madera-contenido {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.madera-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.madera-item img {
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+.madera-item img:hover {
+    transform: scale(1.03);
+}
+
+.madera-texto {
+    width: 55%;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.madera-texto h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.madera-texto p{
+    font-size: 1.2rem;
+}
+
+.madera-item.invertir {
+    flex-direction: row-reverse;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .madera-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .madera-texto,
+    .madera-item img {
+        width: 100%;
+    }
+
+    .madera-titulo {
+        font-size: 2.4rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .madera-hero {
+        height: 270px;
+    }
+
+    .madera-titulo {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .madera-contenido {
+        width: 95%;
+    }
+}

@@ -1,0 +1,199 @@
+/* ================================
+   SECCIÓN CURIOSIDADES 3D
+================================ */
+.curiosidades {
+    width: 100%;
+    padding: 60px 0;
+    background: #ffffff; /* Fondo blanco total */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -80px;
+}
+
+.titulo-curiosidades {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #111;
+    text-align: center;
+}
+
+/* Área del slider */
+.curiosidades-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 280px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Tarjetas */
+.curiosidad-item {
+    position: absolute;
+    width: 230px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Colores diferentes para distinguir el 3D */
+.curiosidad-item:nth-child(1) { background: #c93630; }
+.curiosidad-item:nth-child(2) { background: #90c9e6; }
+.curiosidad-item:nth-child(3) { background: #38793b; }
+.curiosidad-item:nth-child(4) { background: #f5ce35; }
+
+/* NAV: Flechas */
+.curiosidad-nav {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+}
+
+.curiosidad-btn {
+    background: #111;
+    border: none;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.curiosidad-btn:hover {
+    transform: scale(1.15);
+    background: #333;
+}
+
+/* ================================
+   TEXTO ANIMADO DEBAJO DEL SLIDER
+================================ */
+.curiosidades-frase {
+    text-align: center;
+    margin-top: 90px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Título multicolor animado */
+.titulo-color {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    animation: colorChange 6s infinite alternate;
+    background: linear-gradient(
+        90deg,
+        #90c9e6,
+        #38793b,
+        #c93630,
+        #f5ce35,
+        #006400
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Frase secundaria */
+.frase-secundaria {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: #000000;
+    opacity: 0.85;
+    font-weight: 500;
+}
+
+/* Animación */
+@keyframes colorChange {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   MEDIA QUERY - CELULARES
+================================ */
+@media (max-width: 768px) {
+
+    .titulo-curiosidades {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .curiosidades-slider {
+        height: 240px;
+        max-width: 100%;
+    }
+
+    .curiosidad-item {
+        width: 190px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .curiosidad-nav {
+        margin-top: 30px;
+        gap: 18px;
+    }
+
+    .curiosidad-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    /* Texto animado debajo */
+    .curiosidades-frase {
+        margin-top: 60px;  /* reduce separación para móviles */
+    }
+
+    .titulo-color {
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+
+    .frase-secundaria {
+        font-size: 1.2rem;
+        margin-top: 8px;
+    }
+}
+
+/* EXTRA para pantallas muy pequeñas (teléfonos de 320px) */
+@media (max-width: 480px) {
+
+    .curiosidad-item {
+        width: 160px;
+        font-size: 0.95rem;
+    }
+
+    .curiosidades-slider {
+        height: 220px;
+    }
+
+    .curiosidad-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+
+    .titulo-color {
+        font-size: 1.8rem;
+    }
+
+    .frase-secundaria {
+        font-size: 1.05rem;
+    }
+}

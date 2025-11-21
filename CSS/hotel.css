@@ -1,0 +1,214 @@
+
+/* Sección hotel */
+.hotel-section {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 100px 0 50px;
+  margin-bottom: -80px;
+  height: auto;
+  min-height: 870px; /* por si venía heredado */
+  padding-top: 20px;
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(to right, #7cc4ff, #ffffff)
+}
+
+/* Título / intro (mantengo el nombre existente) */
+.intro-hotel {
+  text-align: center;
+  margin: 20px auto 50px;
+  max-width: 900px;
+  color: #000000;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+.intro-hotel h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #003057;
+  margin-bottom: 10px;
+}
+.intro-hotel p {
+  font-size: 1.5em;
+  color: #000000;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Contenedor específico para hoteles */
+.hotel-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 40px; /* separación entre tarjetas */
+    max-width: 700px; /* ancho total del grid */
+    margin: 0 auto; /* centrar el grid */
+    justify-items: center; /* centrar cada tarjeta */
+}
+
+.hoteles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;   /* ← Esto evita que se choquen */
+    margin-bottom: 80px; /* ← Esto separa de la siguiente sección */
+}
+
+.hotel-card {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
+
+/* Cada tarjeta del hotel (nombre específico) */
+.hotel-container .hotel-card{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+/* Efecto hover: crece la tarjeta */
+.hotel-container .hotel-card:hover{
+    height: 350px;
+}
+
+/* Caja de imagen (nombre específico) */
+.hotel-container .hotel-imgbox {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #555;
+}
+
+/* Curva blanca inferior (decoration) */
+.hotel-container .hotel-imgbox::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  height: 80px;
+  border-radius: 40px;
+  background: #ffffff;
+}
+
+/* Curva lateral */
+.hotel-container .hotel-imgbox::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 75px 70px 0 40px #fff;
+}
+
+/* Contenido (nombre específico) */
+.hotel-container .hotel-content {
+   position: relative;
+   top: -10px;
+   z-index: 10;
+   padding: 0 30px;
+   transition: 0.5s;
+}
+
+.hotel-container .hotel-content h3{
+    position: relative;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.hotel-container .hotel-content p {
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+    color: #333;
+}
+
+/* Al hacer hover mostramos el párrafo */
+.hotel-container .hotel-card:hover .hotel-content p {
+    opacity: 1;
+}
+
+/* ===== Media queries adaptadas al nombre nuevo ===== */
+@media (max-width: 1024px) {
+  .intro-hotel h2 {
+    font-size: 2em;
+  }
+
+  .intro-hotel p {
+    font-size: 1em;
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  .hotel-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .hotel-container .hotel-card {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-section {
+    height: auto;
+    min-height: 800px;
+  }
+  .intro-hotel {
+    margin: 40px auto 20px;
+    padding: 0 10px;
+  }
+
+  .intro-hotel h2 {
+    font-size: 1.8em;
+  }
+
+  .intro-hotel p {
+    font-size: 0.95em;
+    text-align: center;
+  }
+
+  .hotel-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .hotel-container .hotel-card {
+    width: 90%;
+    max-width: 320px;
+    height: 280px;
+  }
+
+  .hotel-container .hotel-card:hover {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-hotel h2 {
+    font-size: 1.5em;
+  }
+
+  .intro-hotel p {
+    font-size: 0.9em;
+    text-align: left;
+  }
+
+  .hotel-container .hotel-card {
+    width: 95%;
+    height: 260px;
+  }
+}

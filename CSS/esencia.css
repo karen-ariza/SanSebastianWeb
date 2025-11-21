@@ -1,0 +1,52 @@
+/* ================================ */
+/*         SECCIÓN ESENCIA          */
+/* ================================ */
+.esencia {
+  padding: 60px 20px;
+}
+
+.esencia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.esencia-texto h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #c62828;
+  margin-bottom: 15px;
+}
+
+.esencia-texto p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.esencia-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.esencia-imagen {
+  flex: 1;
+  height: 350px;
+  background-image: url('../imagenes/calle.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.esencia-texto-2 {
+  flex: 1;
+  max-width: 480px;
+}
+
+.esencia-texto-2 p {
+  font-size: 1.2em;
+  text-align: justify;
+  margin-bottom: 20px;
+}

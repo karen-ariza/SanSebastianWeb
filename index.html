@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Sebastian de Buenavista</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- AOS animaciones -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+  <!-- CSS personalizados -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/lugares.css">
+  <link rel="stylesheet" href="CSS/hotel.css">
+  <link rel="stylesheet" href="CSS/gastronomia.css">
+  <link rel="stylesheet" href="CSS/artesanias.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/fiestas.css">
+  <link rel="stylesheet" href="CSS/simbolos.css">
+  <link rel="stylesheet" href="CSS/curiosidades.css">
+  <link rel="stylesheet" href="CSS/esencia.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="mi-nav">
+      <div class="logo">
+        <img src="imagenes/Escudo.png" alt="Escudo" class="logo-img">
+        <span>San Sebastián de Buenavista</span>
+      </div>
+
+      <button class="mi-nav-menu-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <ul class="mi-nav-menu">
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#Inicio" class="mi-nav-menu-link">Inicio</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#seccion-inferior" class="mi-nav-menu-link">Historia</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#cultura" class="mi-nav-menu-link">Cultura</a></li>
+
+        <!-- TURISMO SUBMENÚ -->
+        <li class="mi-nav-menu-item mi-nav-link">
+          <a href="#" class="mi-nav-menu-link">Turismo ▾</a>
+          <ul class="submenu">
+            <li><a href="#carrusel">Lugares emblematicos</a></li>
+            <li><a href="#hotel">Hoteles</a></li>
+            <li><a href="#gastronomia">Gastronomia</a></li>
+            <li><a href="#artesanias">Artesanias</a></li>
+            <li><a href="#fiestas">Festividades</a></li>
+          </ul>
+        </li>
+
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#simbolos" class="mi-nav-menu-link">Simbolo</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#curiosidades" class="mi-nav-menu-link">Curiosidades</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#contactos" class="mi-nav-menu-link">contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL CON VIDEO -->
+  <section id="Inicio" class="hero">
+    <video autoplay muted loop id="video-fondo">
+      <source src="imagenes/chande 1.1.mp4" type="video/mp4">
+      Tu navegador no soporta el video
+    </video>
+
+    <div class="hero-content">
+      <h2>Tierra de chandé y tradición cultural</h2>
+      <p>Un lugar donde la música, la naturaleza y la calidez de su gente te esperan</p>
+      <a href="#seccion-inferior" class="flecha" title="Desplazarse hacia abajo"></a>
+    </div>
+  </section>
+
+<!-- ========================= -->
+<!--   SECCIÓN ESENCIA        -->
+<!-- ========================= -->
+<section class="esencia" id="seccion-inferior">
+  <div class="esencia-container">
+
+    <div class="esencia-texto">
+      <h2>🪘San Sebastián de Buenavista</h2>
+      <p>
+        San Sebastián de Buenavista es un municipio de Colombia situado en el departamento del Magdalena, 
+        al nordeste del país, a 315 km de la capital. Llamado La Tierra del Chandé, es reconocido por su riqueza cultural, 
+        musical y su fuerte identidad ribereña. Ubicado en plena Depresión Momposina, este territorio está rodeado de ríos, 
+        caños y ciénagas que moldean el paisaje y la vida diaria de sus habitantes. Su gente, amable y trabajadora, 
+        combina la pesca artesanal, la agricultura y las tradiciones ancestrales para mantener viva la esencia del pueblo. 
+        En San Sebastián, cada calle, cada tambor y cada atardecer cuentan una historia de raíces profundas y orgullo local.
+      </p>
+    </div>
+
+    <div class="esencia-contenido">
+      <div class="esencia-imagen"></div>
+
+      <div class="esencia-texto-2">
+        <p>
+          San Sebastián de Buenavista es uno de esos pueblos que guardan historias en cada calle, 
+          en cada tambor y en cada mirada. Aquí, la tierra respira tradición y el río Magdalena susurra recuerdos de antiguos pueblos indígenas, 
+          colonizadores, músicos y campesinos que dieron forma a esta tierra única. Conocer su historia es viajar a los orígenes del Caribe profundo, 
+          donde los sonidos del Chandé, la devoción al santo patrono y el espíritu ribereño se mezclan para contar un pasado lleno de resistencia, 
+          identidad y magia cultural.
+        </p>
+
+        <!-- BOTÓN QUE ABRE EL MODAL -->
+        <button 
+          class="btn btn-warning fw-bold" 
+          data-bs-toggle="modal" 
+          data-bs-target="#modalEsencia">
+          📖 Conoce nuestra historia
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================= -->
+<!--   MODAL ESENCIA          -->
+<!-- ========================= -->
+<div class="modal fade" id="modalEsencia" tabindex="-1" aria-labelledby="modalEsenciaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- HEADER -->
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalEsenciaLabel">Historia de San Sebastián de Buenavista</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+        <p>
+          La historia de San Sebastián de Buenavista se remonta al siglo XVIII, cuando estas tierras estaban habitadas por los pueblos indígenas Chimilas, 
+          liderados por el cacique Menchiquejo. En ese entonces, la región era un extenso territorio de ciénagas, montes y brazos del río Magdalena que servían como refugio, 
+          fuente de alimento y espacio espiritual para las comunidades originarias. El 20 de enero de 1748, 
+          el caballero español José Fernando de Mier y Guerra fundó oficialmente el poblado con el nombre San Sebastián de Menchiquejo,
+          uniendo la devoción cristiana por San Sebastián Mártir con el nombre del cacique indígena que había marcado la identidad de la zona. Tres años después, en 1751, 
+          el pueblo pasó a llamarse San Sebastián de Buenavista, nombre que surgió —según versiones históricas— por un error en una carta enviada desde España o por la admiración hacia los paisajes que rodeaban al territorio. 
+          Durante la época colonial, el lugar fue escenario de enfrentamientos entre indígenas y colonizadores, lo que obligó a muchos Chimilas a desplazarse hacia la zona que hoy es San Fernando (Bolívar). 
+          A pesar de esas luchas, su legado sigue presente en la memoria del pueblo. Con el tiempo, San Sebastián atravesó cambios administrativos y períodos de inestabilidad hasta que, finalmente, el 13 de diciembre de 1957, 
+          recuperó su categoría de municipio independiente. Hoy, su historia sigue viva en sus festividades, en el sonido ancestral del Chandé y en el orgullo con que sus habitantes cuentan el origen de la Tierra del Chandé.
+        </p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- SECCIÓN CHANDÉ -->
+  <section class="chande" id="cultura">
+    <h2>🔥<span>San Sebastián de Buenavista:</span> Tierra donde nació el Chandé</h2>
+    <p class="subtitulo">Sonidos que nacen del río, del alma y de la alegría de su gente.</p>
+
+    <div class="tarjetas">
+
+      <div class="tarjeta">
+        <img src="imagenes/troyo.jpg" alt="Grandes Cultores">
+        <h3>Grandes Cultores</h3>
+        <a href="cultores.html" class="btn-ver">Ver más</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/intrumentos.jpg" alt="Instrumentos">
+        <h3>Instrumentos</h3>
+        <a href="instrumentos.html" class="btn-ver">Ver más</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="imagenes/ves 1.jpg" alt="Vestuario">
+        <h3>Vestuario</h3>
+        <a href="vestuario.html" class="btn-ver">Ver más</a>
+      </div>
+
+    </div>
+
+    <p class="descripcion">
+      Nacido entre tambores, río y tradición, el Chandé es más que música: es identidad, resistencia y alegría.
+      Heredado de los ancestros africanos, indígenas y campesinos, este ritmo centenario sigue encendiendo las fiestas
+      y corazones de quienes sienten orgullo por su tierra, “La Tierra del Chandé”.
+    </p>
+
+    <a href="chande.html" class="btn-cultura">🪘 Conoce nuestra cultura</a>
+  </section>
+
+<!-- TURISMO - CARRUSEL -->
+<section id="carrusel" class="carrusel-section">
+
+  <div class="intro-carrusel">
+    <h2>Entre el rumor del río y la calma de sus ciénagas,</h2>
+    <p>San Sebastián te invita a vivir la naturaleza en su forma más pura.<br>
+      <span class="emoji">🏞️</span> Descubre la magia de San Sebastián
+    </p>
+  </div>
+
+  <div class="slider">
+
+    <div class="list">
+
+      <div class="item">
+        <img src="./imagenes/Iglesia.jpg" alt="">
+        <div class="content">
+          <div class="title">Iglesia Central de San Sebastián Mártir</div>
+          <div class="type">Patrimonio religioso y arquitectónico</div>
+          <div class="description">
+            Ubicada en el corazón del casco urbano, 
+            esta iglesia colonial es uno de los símbolos
+            más reconocidos del municipio. Fue edificada
+            en honor al santo patrono San Sebastián Mártir,
+            y cada enero se convierte en el epicentro de 
+            las fiestas patronales.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalIglesia">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./imagenes/Parque.jpg" alt="">
+        <div class="content">
+          <div class="title">Plaza Principal y Monumento al Chandé</div>
+          <div class="type">Parque Jorge Eliécer Gaitán</div>
+          <div class="description">
+            Un rincón lleno de historia donde 
+            el legado de Gaitán inspira cada paso.
+            Un espacio vibrante que celebra la cultura
+            y la comunidad, ideal para pasear
+            y disfrutar de la vida local.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalParque">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OBELISCO -->
+      <div class="item">
+        <img src="./imagenes/Obelisco.jpg" alt="">
+        <div class="content">
+          <div class="title">El Obelisco</div>
+          <div class="type">Monumento de memoria local</div>
+          <div class="description">
+            Un monumento que rinde homenaje a la historia y la cultura de San Sebastián.  
+            Un lugar de encuentro para la comunidad y un símbolo de identidad.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalObelisco">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHANAS -->
+      <div class="item">
+        <img src="./imagenes/Chanas.jpg" alt="">
+        <div class="content">
+          <div class="title">Las Chanas</div>
+          <div class="type">Mirador natural y puerta fluvial del municipio</div>
+          <div class="description">
+            Zona turística donde se observa el río, se disfruta el paisaje y se toma la chalupa hacia los recorridos fluviales.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalChanas">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./imagenes/Carrillo.jpg" alt="">
+        <div class="content">
+          <div class="title">La Ciénaga de Carrillo</div>
+          <div class="type">Espejo natural del municipio</div>
+          <div class="description">
+            Un cuerpo de agua emblemático, ideal para la pesca, 
+            la biodiversidad y los paisajes inolvidables.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalCarrillo">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./imagenes/Embarcadero.jpg" alt="">
+        <div class="content">
+          <div class="title">El Embarcadero del Pueblo</div>
+          <div class="type">Puerta fluvial hacia el Magdalena</div>
+          <div class="description">
+            Punto de encuentro entre viajeros, pescadores y el majestuoso río
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalEmbarcadero">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./imagenes/Piscina.jpg" alt="">
+        <div class="content">
+          <div class="title">Piscina Ittitaki</div>
+          <div class="type">Diversión y frescura local</div>
+          <div class="description">
+            Centro recreativo popular entre familias, jóvenes y visitantes del municipio.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalPiscina">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./imagenes/Rancho.jpg" alt="">
+        <div class="content">
+          <div class="title">Rancho Babilla</div>
+          <div class="type">Aventura y naturaleza ribereña</div>
+          <div class="description">
+            Un espacio campestre para convivir con el entorno natural y la fauna local.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalRancho">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./imagenes/Rio.jpg" alt="">
+        <div class="content">
+          <div class="title">El Río Magdalena</div>
+          <div class="type">El gigante que da vida al pueblo</div>
+          <div class="description">
+            Fuente de sustento, cultura, comercio e identidad para San Sebastián.
+          </div>
+          <div class="button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalRio">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="thumbnail">
+      <div class="item"><img src="./imagenes/Iglesia.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Parque.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Obelisco.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Chanas.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Carrillo.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Embarcadero.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Piscina.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Rancho.jpg" alt=""></div>
+      <div class="item"><img src="./imagenes/Rio.jpg" alt=""></div>
+    </div>
+
+    <div class="nextPrevArrows">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- MODALES DE BOOTSTRAP -->
+
+<!-- MODAL IGLESIA -->
+<div class="modal fade" id="modalIglesia" tabindex="-1" aria-labelledby="modalIglesiaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalIglesiaLabel">Iglesia Central de San Sebastián Mártir</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          La Iglesia de San Sebastián Mártir se levantó en el corazón del
+          pueblo como símbolo de fe y unión desde la época colonial.
+          Su origen se remonta a los primeros años de la fundación de
+          San Sebastián de Menchiquejo, cuando los pobladores 
+          necesitaban un espacio para sus rituales religiosos y
+          comunitarios. Con el paso del tiempo, sus paredes blancas 
+          y su torre principal se convirtieron en el punto de referencia
+          para los viajeros y en el alma espiritual del municipio.
+          Cada enero, miles de devotos llegan para celebrar las 
+          fiestas patronales, llenando de música, tambores y oraciones
+          sus alrededores. La iglesia no solo guarda imágenes religiosas,
+          sino también historias de resistencia, tradición y encuentros 
+          que han marcado a generaciones de sansebastianeros.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL PARQUE -->
+<div class="modal fade" id="modalParque" tabindex="-1" aria-labelledby="modalParqueLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalParqueLabel">Parque Jorge Eliécer Gaitán</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          El parque Jorge Eliécer Gaitán es uno de los espacios 
+          públicos más recordados del municipio, no solo por su diseño,
+          sino por la historia que lo rodea. Según los relatos, 
+          durante la violencia política de 1950, habitantes del pueblo
+          protegieron el busto de Gaitán enterrándolo en secreto para 
+          evitar su destrucción. Años después, fue devuelto a su sitio,
+          convirtiéndose en símbolo de valentía y resistencia civil. 
+          Hoy, el parque es un lugar de descanso, tertulia y 
+          celebraciones, donde generaciones enteras han visto pasar 
+          comparsas, discursos, juegos infantiles y encuentros 
+          culturales. Representa la memoria viva de un pueblo que 
+          defiende lo que ama.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL OBELISCO -->
+<div class="modal fade" id="modalObelisco" tabindex="-1" aria-labelledby="modalObeliscoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalObeliscoLabel">Obelisco de San Sebastián</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          El Obelisco de San Sebastián de Buenavista se levantó como un homenaje a momentos 
+          clave de la historia local. Aunque su construcción es más reciente 
+          que otros monumentos del pueblo, se ha convertido en referencia 
+          visual y punto de encuentro. Para muchos ciudadanos, este sitio 
+          representa la fuerza y la identidad del municipio, un recordatorio
+          del esfuerzo colectivo que ha permitido su desarrollo. Con el paso
+          del tiempo, alrededor del obelisco se han realizado actos culturales,
+          celebraciones y encuentros comunitarios que fortalecen el sentido 
+          de pertenencia. Es un símbolo moderno dentro de un territorio de 
+          tradiciones ancestrales. El obelisco representa la memoria y el
+          orgullo histórico de la comunidad.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL CHANAS -->
+<div class="modal fade" id="modalChanas" tabindex="-1" aria-labelledby="modalChanasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalChanasLabel">Las Chanas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Las Chanas es uno de los lugares más emblemáticos de San Sebastián de Buenavista, 
+          conocido por su función como mirador natural hacia el majestuoso río 
+          Magdalena. Desde este punto, turistas y habitantes se reúnen para 
+          contemplar el paisaje, sentir la brisa ribereña y disfrutar de un 
+          espacio tranquilo para conversar, pescar o simplemente ver el 
+          atardecer. Con el paso del tiempo, Las Chanas se convirtió también
+          en el puerto turístico del municipio: aquí llegan las chalupas 
+          que transportan visitantes hacia los corregimientos vecinos, 
+          creando un ambiente de movimiento, alegría y comercio local.
+          Los sansebastianeros cuentan que antiguamente este sitio era 
+          usado por pescadores para organizar sus faenas antes del 
+          amanecer, lo que ayudó a que se formara una pequeña tradición
+          ribereña alrededor del lugar. Hoy, Las Chanas es un espacio 
+          donde confluyen naturaleza, turismo y vida cotidiana, siendo 
+          uno de los puntos más queridos por quienes desean conectarse 
+          con el río y la esencia del municipio.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CARRILLO -->
+<div class="modal fade" id="modalCarrillo" tabindex="-1" aria-labelledby="modalCarrilloLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalCarrilloLabel">Ciénaga de Carrillo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p> La Ciénaga de Carrillo es uno de los ecosistemas más antiguos y 
+          representativos de San Sebastián de Buenavista. Desde tiempos 
+          indígenas, sus aguas fueron hogar de peces, aves y plantas que 
+          sustentaban a las comunidades ribereñas. Con el paso de los siglos,
+           la ciénaga se convirtió en un espacio clave para la pesca artesanal 
+           y en una fuente de alimento para las familias del municipio. 
+           Sus atardeceres, reflejados en el agua, son considerados postales
+            naturales imborrables por quienes la visitan. Hoy sigue siendo 
+            un lugar de encuentro, trabajo y contemplación, donde la 
+            naturaleza recuerda la riqueza de San Sebastian .</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL EMBARCADERO -->
+<div class="modal fade" id="modalEmbarcadero" tabindex="-1" aria-labelledby="modalEmbarcaderoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalEmbarcaderoLabel">El Embarcadero</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>El embarcadero ha sido, desde hace décadas, la zona más transitada
+           para quienes van y vienen por el río Magdalena. En los tiempos
+           en que no existían carreteras, era el principal acceso al 
+           municipio, conectando a San Sebastián con Mompox, San Zenón 
+           y los pueblos del sur. Allí llegaban comerciantes, músicos, 
+           viajeros y campesinos cargados de historias y mercancía. 
+           Todavía hoy, el embarcadero es símbolo de movimiento, tradición
+           y vida ribereña: un lugar donde las lanchas reposan, los 
+           pescadores conversan y el río sigue marcando el ritmo cotidiano 
+           del pueblo. Es el punto donde se sienten más vivos los lazos entre
+           el municipio y el Magdalena.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PISCINA -->
+<div class="modal fade" id="modalPiscina" tabindex="-1" aria-labelledby="modalPiscinaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalPiscinaLabel">Piscina Ittitaki</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>La piscina Ittitaki surgió como un espacio de recreación
+           para la comunidad, especialmente para las familias que 
+           buscaban un lugar seguro y agradable para disfrutar del 
+           fin de semana. Con los años, se convirtió en un punto 
+           tradicional para reuniones, festividades y eventos escolares.
+           Su infraestructura rodeada de naturaleza permite que niños
+           y adultos disfruten del clima cálido del municipio. Además, 
+           se ha consolidado como uno de los sitios preferidos por
+           turistas que visitan San Sebastián en temporada alta.
+           Ittitaki representa el espíritu alegre del pueblo y 
+           su hospitalidad.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL RANCHO -->
+<div class="modal fade" id="modalRancho" tabindex="-1" aria-labelledby="modalRanchoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalRanchoLabel">Rancho Babilla</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Rancho Babilla es uno de los atractivos más 
+          curiosos del municipio, conocido por su ambiente 
+          natural y su cercanía con la fauna típica de la
+          ciénaga. Nació como un espacio campestre para compartir en familia y 
+          disfrutar de la naturaleza sin salir de San Sebastián. Con el tiempo, 
+          se convirtió en sitio para asados, paseos, celebraciones y actividades
+          recreativas. Allí, los visitantes pueden apreciar el paisaje húmedo, 
+          el canto de las aves y el ambiente tranquilo que caracteriza al pueblo.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL RIO -->
+<div class="modal fade" id="modalRio" tabindex="-1" aria-labelledby="modalRioLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="modalRioLabel">El Río Magdalena</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>El río Magdalena es mucho más que un límite natural: es la columna vertebral de la historia de San Sebastián de Buenavista.
+           Desde la época indígena Chimila, sus aguas permitieron la pesca, 
+           el transporte, el comercio y la comunicación con otros pueblos. 
+           Durante la Colonia, fue la vía principal que conectó a los primeros 
+           pobladores con la región. En sus orillas nacieron ritmos, como el
+           Chandé, y tradiciones que aún hoy siguen vivas. Las procesiones 
+           fluviales, los paseos en canoa, las faenas pesqueras y los 
+           atardeceres dorados hacen del Magdalena el guardián silencioso
+           del municipio. Cada ola lleva una historia y cada corriente 
+           recuerda que este río es el corazón de la vida sansebastianera.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- HOTEL -->
+<section id="hotel" class="hotel-section ">
+  <div class="intro-hotel">
+    <h2>Hoteles de San Sebastián de Buenavista</h2>
+    <p>Sabores auténticos que cuentan la historia de nuestra tierra.<br>
+      <span class="emoji">🍽️</span> Descubre los servicios y hospedajes.
+    </p>
+  </div>
+
+  <div class="hotel-container">
+
+    <!-- Itti Takke Hotel -->
+    <div class="hotel-card">
+      <div class="hotel-imgbox">
+        <img src="imagenes/Piscina.jpg" alt="Itti Takke Hotel">
+      </div>
+      <div class="hotel-content">
+        <h3>Itti Takke Hotel</h3>
+        <p>Hotel  con piscina, zona recreacional y ambiente tranquilo.<br>
+         <strong> Calle 8 #6-08 <br>Tel: +57 311 7035968</strong>
+  
+        </p>
+      </div>
+    </div>
+
+    <!-- Hospedaje Alejandría -->
+    <div class="hotel-card">
+      <div class="hotel-imgbox">
+        <img src="imagenes/Alejandria.jpg" alt="Hospedaje Alejandría">
+      </div>
+      <div class="hotel-content">
+        <h3>Hospedaje Alejandría</h3>
+        <p> Hospedaje ideal para viajeros que quieren un lugar básico, limpio<br>
+           <strong>Carrera 2 Calle 4, <br>
+          Tel: +57 317 5266526</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Hotel Carmine Spadafora -->
+    <div class="hotel-card">
+      <div class="hotel-imgbox">
+        <img src="imagenes/spadafora.jpg" alt="Hotel Carmine Spadafora">
+      </div>
+      <div class="hotel-content">
+        <h3>Hotel Carmine Spadafora</h3>
+        <p> Hotel con toque boutique, habitaciones privadas y un estilo muy local.<br>
+         <strong>Calle 5 #4-74<br>
+          Tel: +57 321 7078577</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Hotel Imperial HJB -->
+    <div class="hotel-card">
+      <div class="hotel-imgbox">
+        <img src="imagenes/Imperial.jpg" alt="Hotel Imperial HJB">
+      </div>
+      <div class="hotel-content">
+        <h3>Hotel Imperial HJB</h3>
+        <p> Alojamiento  ideal para viajeros que buscan funcionalidad.</br>
+        <strong>Calle 5 #1-55<br>
+          Tel: +57 320 6289393</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="gastronomia" class="gastronomia-section">
+
+  <div class="gas-intro">
+    <h2>Gastronomía Tradicional</h2>
+    <p>La gastronomía de San Sebastián de Buenavista refleja la tradición ribereña del municipio. Sus platos nacen del
+       río Magdalena y de las ciénagas, donde la pesca y los ingredientes frescos son parte de la vida diaria. Cada comida 
+       cuenta una historia y conserva el sabor auténtico de la Depresión Momposina.</p>
+  </div>
+
+  <div class="gas-wrapper">
+    <div class="gas-container">
+
+      <!-- 1 - Yuca con suero y queso costeño -->
+      <input type="radio" name="gastro" id="g-c1" checked>
+      <label class="gas-card" for="g-c1">
+        <div class="gas-row">
+          <div class="gas-icon">🧀</div>
+          <div class="gas-description">
+            <h4>Yuca con suero y queso costeño</h4>
+            <p>Yuca cocida servida con suero artesanal y queso salado tradicional.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 2 - Viuda de pescado -->
+      <input type="radio" name="gastro" id="g-c2">
+      <label class="gas-card" for="g-c2">
+        <div class="gas-row">
+          <div class="gas-icon">🐟</div>
+          <div class="gas-description">
+            <h4>Viuda de pescado</h4>
+            <p>Preparada con bocachico fresco, yuca y plátano, plato emblemático.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 3 - Pandeyuca y almojábanas -->
+      <input type="radio" name="gastro" id="g-c3">
+      <label class="gas-card" for="g-c3">
+        <div class="gas-row">
+          <div class="gas-icon">🍞</div>
+          <div class="gas-description">
+            <h4>Pandeyuca y almojábanas</h4>
+            <p>Panes artesanales de yuca y queso horneados en hornos de barro.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 4 - Sancocho de gallina criolla -->
+      <input type="radio" name="gastro" id="g-c4">
+      <label class="gas-card" for="g-c4">
+        <div class="gas-row">
+          <div class="gas-icon">🍛</div>
+          <div class="gas-description">
+            <h4>Sancocho de gallina criolla</h4>
+            <p>Sopa tradicional con gallina de corral, ñame y plátano verde.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 5 - Arepas de maíz pelao -->
+      <input type="radio" name="gastro" id="g-c5">
+      <label class="gas-card" for="g-c5">
+        <div class="gas-row">
+          <div class="gas-icon">🌽</div>
+          <div class="gas-description">
+            <h4>Arepas de maíz pelao</h4>
+            <p>Hechas con maíz cocido y molido, asadas en budare artesanal.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 6 - Rungo o Huila -->
+      <input type="radio" name="gastro" id="g-c6">
+      <label class="gas-card" for="g-c6">
+        <div class="gas-row">
+          <div class="gas-icon">🍜</div>
+          <div class="gas-description">
+            <h4>Rungo o Huila</h4>
+            <p>Plato ancestral de frijol cabecita negra con carne salada y ñame.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 7 - Enyucado -->
+      <input type="radio" name="gastro" id="g-c7">
+      <label class="gas-card" for="g-c7">
+        <div class="gas-row">
+          <div class="gas-icon">🍠</div>
+          <div class="gas-description">
+            <h4>Enyucado</h4>
+            <p>Postre horneado de yuca, coco, queso costeño y panela.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 8 - Arroz con lisa o bocachico -->
+      <input type="radio" name="gastro" id="g-c8">
+      <label class="gas-card" for="g-c8">
+        <div class="gas-row">
+          <div class="gas-icon">🥘</div>
+          <div class="gas-description">
+            <h4>Arroz de coco con bocachico</h4>
+            <p>Arroz tradicional y de coco, preparado con pescado de río </p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 10 - Dulces y postres tradicionales -->
+      <input type="radio" name="gastro" id="g-c9">
+      <label class="gas-card" for="g-c9">
+        <div class="gas-row">
+          <div class="gas-icon">🍬</div>
+          <div class="gas-description">
+            <h4>Dulces y postres tradicionales</h4>
+            <p>Papaya verde, coco, caballito de leche y cocadas.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 11 - Bebidas típicas -->
+      <input type="radio" name="gastro" id="g-c10">
+      <label class="gas-card" for="g-c10">
+        <div class="gas-row">
+          <div class="gas-icon">☕</div>
+          <div class="gas-description">
+            <h4>Bebidas típicas</h4>
+            <p>Chicha de maíz, guarapo de caña y café campesino fuerte.</p>
+          </div>
+        </div>
+      </label>
+
+      <!-- 12 - Jugos naturales -->
+      <input type="radio" name="gastro" id="g-c11">
+      <label class="gas-card" for="g-c11">
+        <div class="gas-row">
+          <div class="gas-icon">🥭</div>
+          <div class="gas-description">
+            <h4>Jugos naturales</h4>
+            <p>Jugos artesanales de mango, corozo, guayaba, tamarindo y más.</p>
+          </div>
+        </div>
+      </label>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ARTESANÍAS -->
+<section id="artesanias" class="artesanias-section">
+
+  <div class="intro-artesanias">
+    <h2>Artesanías de San Sebastián de Buenavista</h2>
+    <p>
+      Descubre las artesanías únicas que reflejan la cultura y tradición.<br>
+      <span class="emoji">🎨</span> Creaciones hechas con herencia local.
+    </p>
+  </div>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="imagenes/tejidosbanner.jpg" alt="">
+      <div class="card-content">
+        <h3>Tejidos naturales</h3>
+        <p>Manos que transforman la ciénaga en belleza.</p>
+        <a href="tejidos.html" class="btn">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagenes/alfareriabanner.jpg" alt="">
+      <div class="card-content">
+        <h3>Alfarería</h3>
+        <p>El arte que nace del barro.</p>
+        <a href="alfareria.html" class="btn">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagenes/maderabanner.jpg" alt="">
+      <div class="card-content">
+        <h3>Madera tallada</h3>
+        <p>Del bosque a la creación.</p>
+        <a href="madera.html" class="btn">Ver más</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== SECCIÓN: FIESTAS Y CELEBRACIONES ===== -->
+<section id="fiestas" class="fiestas-fondo">
+      <h1 >Fiestas y Celebraciones</h1>
+    <p>San Sebastián de Buenavista: tradición, música, devoción y alegría en cada encuentro comunitario.</p>
+
+    <!-- 1 Fiestas Patronales -->
+    <div class="fiestas-premium">
+      <div class="fiesta-card fiesta-1">
+          <div class="fiesta-img" aria-hidden="true"></div>
+          <div class="fiesta-info">
+              <h2>Fiestas Patronales de San Sebastián</h2>
+              <p>
+                  Celebración en honor a San Sebastián Mártir: procesiones, misas, corralejas, desfiles, eventos culturales y música.
+              </p>
+              <span class="fiesta-meta">📅 16 – 22 de enero</span>
+              <span class="fiesta-meta">📍 Cabecera municipal</span>
+              <p class="fiesta-curioso"><strong>Dato curioso:</strong> Es la festividad más esperada por los habitantes y la más alegre del municipio.</p>
+          </div>
+    </div>
+
+    <!-- 2 Festival Regional del Chandé -->
+    <div class="fiesta-card fiesta-2">
+        <div class="fiesta-img" aria-hidden="true"></div>
+        <div class="fiesta-info">
+            <h2>Festival Regional del Chandé</h2>
+            <p>
+                Festival que exalta el ritmo autóctono del Chandé: concursos de música, danza, comparsas y muestras artísticas.
+            </p>
+            <span class="fiesta-meta">📅 Segunda semana de diciembre</span>
+            <span class="fiesta-meta">📍 Cabecera municipal</span>
+            <p class="fiesta-curioso"><strong>Dato curioso:</strong> Más de 22 ediciones; referente cultural en el sur del Magdalena.</p>
+        </div>
+    </div>
+
+    <!-- 3 Carnavales -->
+    <div class="fiesta-card fiesta-3">
+        <div class="fiesta-img" aria-hidden="true"></div>
+        <div class="fiesta-info">
+            <h2>Carnavales</h2>
+            <p>
+                Comparsas, disfraces, danzas, corralejas y carreras de caballos que llenan de color y creatividad las calles.
+            </p>
+            <span class="fiesta-meta">📅 Febrero – Marzo (según calendario litúrgico)</span>
+            <span class="fiesta-meta">📍 Cabecera municipal y corregimientos</span>
+            <p class="fiesta-curioso"><strong>Dato curioso:</strong> Cada corregimiento adapta la tradición con sus propias variantes.</p>
+        </div>
+    </div>
+
+    <!-- 4 Fiesta de la Virgen del Carmen -->
+    <div class="fiesta-card fiesta-4">
+        <div class="fiesta-img" aria-hidden="true"></div>
+        <div class="fiesta-info">
+            <h2>Fiesta de la Virgen del Carmen</h2>
+            <p>
+                Celebración religiosa con procesiones y caravanas fluviales para honrar a la patrona de pescadores y transportadores.
+            </p>
+            <span class="fiesta-meta">📅 16 de julio</span>
+            <span class="fiesta-meta">📍 Cabecera municipal y zonas ribereñas</span>
+            <p class="fiesta-curioso"><strong>Dato curioso:</strong> Tradición muy arraigada en comunidades costeras del Caribe colombiano.</p>
+        </div>
+    </div>
+    <!-- 9 Festival de la Cosecha (Troncosito) -->
+    <div class="fiesta-card fiesta-5">
+        <div class="fiesta-img" aria-hidden="true"></div>
+        <div class="fiesta-info">
+            <h2>Festival de la Cosecha (Troncosito)</h2>
+            <p>
+                Feria campesina y gastronómica con concursos, procesión fluvial y actividades que celebran la producción local.
+            </p>
+            <span class="fiesta-meta">📅 12 y 13 de octubre</span>
+            <span class="fiesta-meta">📍 Corregimiento de Troncosito</span>
+            <p class="fiesta-curioso"><strong>Dato curioso:</strong> Incluye concursos curiosos como la yuca más pesada y el mejor atarrayero.</p>
+        </div>
+    </div>
+    <div class="fiesta-card fiesta-5">
+        <div class="fiesta-img" aria-hidden="true"></div>
+        <div class="fiesta-info">
+            <h2>Festival de la Cosecha (Troncosito)</h2>
+            <p>
+                Feria campesina y gastronómica con concursos, procesión fluvial y actividades que celebran la producción local.
+            </p>
+            <span class="fiesta-meta">📅 12 y 13 de octubre</span>
+            <span class="fiesta-meta">📍 Corregimiento de Troncosito</span>
+            <p class="fiesta-curioso"><strong>Dato curioso:</strong> Incluye concursos curiosos como la yuca más pesada y el mejor atarrayero.</p>
+        </div>
+    </div>
+
+  </div> <!-- .fiestas-premium -->
+</section>
+
+<!-- ===== SIMBOLOS ===== -->
+
+<section id="simbolos" class="simbolos-container">
+
+    <div class="simbolos-header">
+        <h1>🏳️ Símbolos de identidad Sansebastianera</h1>
+        <p>Conoce los emblemas que reflejan la historia, la cultura y el orgullo de nuestro municipio.</p>
+    </div>
+
+<section class="simbolo-onda">
+  <div class="onda-wrap">
+
+    <div class="onda-item">
+      <div class="onda-visual"><img src="imagenes/Bandera.png" alt="Bandera"></div>
+      <div class="onda-card">
+        <h3>Bandera Municipal</h3>
+        <p>Representa a los 14 corregimientos mediante puntas de sol alrededor de la cabecera municipal.</p>
+      </div>
+    </div>
+
+    <div class="onda-item">
+      <div class="onda-visual"><img src="imagenes/Escudo.JPG" alt="Escudo"></div>
+      <div class="onda-card">
+        <h3>Escudo Municipal</h3>
+        <p>Recoge la historia, el trabajo y la fe del pueblo, integrando símbolos de la agricultura, la música y la espiritualidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- HIMNO -->
+    <div class="himno-box fade-up delay-2">
+        <h2>🎶 Himno del Municipio</h2>
+        <div class="video-wrapper">
+           <iframe width="560" height="315" 
+           src="https://www.youtube.com/embed/DjkBR9jCxzY?si=OWefRyQB_B74n7J-" 
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           referrerpolicy="strict-origin-when-cross-origin" 
+           allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- VIDEOS DE SAN SEBASTIÁN -->
+    <div class="videos-extra fade-up delay-3">
+        <h2>🎥 San Sebastián en Imágenes</h2>
+
+        <div class="videos-grid">
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u76jPz1rXD0?si=JxLiFp4nelNNWJAn" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+
+            </div>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Raft2cUG-q4?si=wEvnsGTB1WqSiEop"
+                 title="YouTube video player" 
+                 frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================================
+     SECCIÓN: CURIOSIDADES 3D
+=================================== -->
+<section id="curiosidades" class="curiosidades">
+
+    <h2 class="titulo-curiosidades">¿SABÍAS QUE?</h2>
+
+    <div class="curiosidades-slider">
+
+        <div class="curiosidad-item active">
+            <p>Es el municipio con el nombre más largo de toda Colombia: 27 letras que lo hacen único en el país.</p>
+        </div>
+
+        <div class="curiosidad-item">
+            <p>Es la cuna del Chandé, un ritmo tradicional que solo nace y se conserva auténtico en San Sebastián.</p>
+        </div>
+
+        <div class="curiosidad-item">
+            <p>Sus artesanías utilizan materiales como tarulla y punco, plantas de la ciénaga usadas para tapetes y canastos.</p>
+        </div>
+
+        <div class="curiosidad-item">
+            <p>De aquí han salido figuras que marcaron la música del Caribe, como “La Chula” y Chan Caro.</p>
+        </div>
+
+    </div>
+
+    <!-- BOTONES DEBAJO -->
+    <div class="curiosidad-nav">
+        <button id="curiosidad-prev" class="curiosidad-btn">&#10094;</button>
+        <button id="curiosidad-next" class="curiosidad-btn">&#10095;</button>
+    </div>
+
+        <!-- 🔥 TEXTO ANIMADO DEBAJO DEL SLIDER -->
+    <div class="curiosidades-frase">
+        <h3 class="titulo-color">San Sebastián de Buenavista</h3>
+        <p class="frase-secundaria">Donde cada tambor cuenta una historia y cada sonrisa es una bienvenida.</p>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contactos" class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>San Sebastián de Buenavista</h3>
+      <p>Tierra del Chandé, cultura, tradición y naturaleza.</p>
+      <img src="../imagenes/Escudo.png" alt="Escudo" class="footer-logo">
+    </div>
+
+    <div class="footer-col">
+      <h4>Enlaces rápidos</h4>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Turismo</a></li>
+        <li><a href="#">Símbolo</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>📍 San Sebastián de Buenavista, Magdalena</p>
+      <p>📧 info@sansebastian.gov.co</p>
+      <p>📞 +57 300 000 0000</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 San Sebastián de Buenavista | Todos los derechos reservados</p>
+  </div>
+
+</footer>
+
+
+<!-- LIBRERÍAS -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="SCRIPT/script.js"></script>
+<script src="SCRIPT/Curiosidades.js"></script>
+
+
+</body>
+</html>

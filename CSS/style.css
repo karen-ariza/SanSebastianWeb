@@ -1,0 +1,766 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  min-height: 900px;
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header{
+  background: linear-gradient(90deg, #e39a9a, #f2d68b, #9acfa5, #b5dcff);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+section {
+  margin-bottom: 0px; /* espacio inferior entre secciones */
+}
+
+.mi-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.mi-nav-link{
+  color: black;
+  text-decoration: none;
+}
+
+.mi-nav-link a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 50px;
+}
+
+.logo-img{
+  width: 40px;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: -4px; /* Ajusta este valor según necesites */
+}
+
+.mi-nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.mi-nav-menu-item{
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.mi-nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.mi-nav-menu-link:hover{
+  background-color: #013220;
+  color: white;
+  transition: 0.5s;
+}
+
+.mi-nav-menu-toggle{
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+.submenu{
+  display: none;
+  position: absolute;
+  background-color: #f2c700;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.submenu li{
+  padding: 8px 20px;
+}
+
+.submenu li a{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 4px 10px;
+  line-height: 1.2;
+}
+
+.submenu li a:hover {
+  background-color: #013220;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.mi-nav-menu-item:hover .submenu {
+  display: block;
+}
+
+/* Asegura que el li padre tenga posición relativa */
+.mi-nav-menu-item {
+  position: relative;
+}
+
+/*seccion hero con video*/
+.hero {
+  position: relative;
+  height: auto;
+  min-height: 550px !important;
+  padding: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(60%);
+  
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: rgb(255, 217, 0);
+  text-align: center;
+  max-width: 80%;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 180px;
+  transform: translateY(-50px);
+}
+
+.hero-content h2 {
+  font-size: 3.7em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: -50px;
+  font-family: "fantasy", copperplate;
+}
+
+.hero-content p {
+ margin-top: 10px;
+ font-size: 2.2em;
+ color: #fff;
+ line-height: 1.4;
+ font-family: "Georgia", cursive;
+}
+
+/* ===== FLECHA ANIMADA ===== */
+.flecha{
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  width: 35px;
+  height: 35px;
+  border-left: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255, 255, 255);
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  z-index: 10; 
+}
+
+.flecha:hover {
+  border-color: #f2c700;
+}
+
+/* ————————————————————————————
+   MODAL ESENCIA (CORRECTO Y ÚNICO)
+————————————————————————————— */
+.modal-esencia {
+  display: none;               
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  text-align: justify;
+  z-index: 9999;
+  /* 💥 Evita bloquear botones cuando está cerrado */
+  pointer-events: none;
+  /* Para centrar contenido al mostrarse */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-esencia.show {
+  display: flex;
+
+  /* Ahora sí recibe clics */
+  pointer-events: auto;
+}
+
+/* CUERPO DEL MODAL */
+.modal-esencia-contenido {
+  background: #fff;
+  width: 90%;
+  max-width: 650px;
+  border-radius: 16px;
+  overflow: hidden;
+  animation: modalFade 0.35s ease;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+}
+
+/* ANIMACIÓN */
+@keyframes modalFade {
+  from { opacity: 0; transform: translateY(-25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ————————————————————————————
+   ESTILOS DE LA SECCIÓN ESENCIA
+————————————————————————————— */
+
+.esencia{
+  background: linear-gradient(90deg, #ffffff, #fc989186);
+}
+.esencia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.esencia-texto h2 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #c62828;
+  text-align: center;
+}
+
+.esencia-texto p {
+  font-size: 1.3em;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.esencia-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  text-align: justify;
+}
+
+.esencia-imagen {
+  flex: 1;
+  background-image: url('../imagenes/calle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: -5%;
+  width: calc(100% + 10%);
+}
+
+.esencia-texto-2 {
+  flex: 1;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  padding: 45px 40px;
+  color: #000000;
+}
+
+.esencia-texto-2 h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #c62828;
+  margin-bottom: 15px;
+}
+
+.esencia-texto-2 p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  text-align: justify;
+  color: #000000;
+}
+
+.btn-esencia {
+  background-color: #e41b17;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn-esencia:hover {
+  background-color: #b71511;
+}
+
+/* HEADER */
+.modal-esencia-header {
+  background: #ffc400;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-esencia-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* X DE CERRAR */
+.modal-esencia-x {
+  font-size: 26px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+/* BODY */
+.modal-esencia-body {
+  padding: 20px 25px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+/* BOTÓN CERRAR */
+.modal-esencia-btn {
+  padding: 8px 20px;
+  background: #666;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-esencia-btn:hover {
+  background: #4a4a4a;
+}
+
+/* BOTÓN DE LA SECCIÓN (personalizable) */
+.btn-esencia {
+  background-color: #e41b17;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-esencia:hover {
+  background-color: #b71511;
+}
+
+
+/* seccion chandé*/
+.chande {
+  background-color: #f8f4f4;
+  text-align: center;
+  padding: 100px 10%;
+  color: #222;
+  height: auto;
+  min-height: 950px;
+}
+
+.chande h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.chande h2 span {
+  color: #000000;
+}
+
+.chande .subtitulo {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.tarjeta {
+  background: #fff;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #6b4ce6; /* línea decorativa */
+}
+
+.tarjeta h3 {
+  margin: 15px 0 5px;
+  font-size: 1.4em;
+  color: #222;
+}
+
+.btn-ver {
+  display: inline-block;
+  background-color: #6b4ce6;
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 10px 0 20px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-ver:hover {
+  background-color: #5337c9;
+}
+
+.descripcion {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.btn-cultura {
+  display: inline-block;
+  background-color: #007a4d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-cultura:hover {
+  background-color: #005c38;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-15px) rotate(-45deg);
+  }
+}
+
+/*FOOTER ESTILOS */
+.footer {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 50px 0 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 80px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Títulos del footer */
+.footer h3,
+.footer h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fbc02d; /* Amarillo similar al que usas */
+}
+
+/* Logo del footer */
+.footer-logo {
+  width: 90px;
+  margin-top: 10px;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+}
+
+/* Párrafos */
+.footer p {
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Enlaces */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffffb3;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fbc02d;
+  text-decoration: underline;
+}
+
+/* Parte inferior */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff30;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #ffffff80;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .hero{
+    margin-top: 60px;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+
+    /* NUEVO: Fuerza a que tome todo el espacio */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente si hay altura asignada */
+
+    /* Para que NO se quede a un solo lado */
+    text-align: center;
+
+    padding: 0 20px; /* opcional, evita que toque los bordes en móviles */
+  }
+
+  .hero-content h2,
+  .hero-content p {
+    width: 100%;            /* Toman todo el ancho */
+    max-width: 100%;        /* Evita límites */
+  }
+
+
+  .hero-content{
+    font-size: 1em;   
+  }
+
+  .hero-content h2 {
+    font-size: 2em;
+  }
+
+  .hero-content p{
+    font-size: 1em;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  /* Por defecto, el menú está oculto */
+  .mi-nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(245, 207, 202);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    /*scroll*/
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+
+  .mi-nav-menu-item{
+   line-height: 70px; 
+  }
+
+  /*estilo en las letras cuando cambia el celular */  
+  .mi-nav-menu-link:hover{
+    background: none;
+    color: rgb(238, 10, 10);
+  }
+
+  /* Cuando el JS activa la clase .active, el menú se muestra */
+  .mi-nav-menu.active {
+    display: flex;
+  }
+
+  /*Mostrar el botón hamburguesa solo en móvil */
+  .mi-nav-menu-toggle {
+    display: block;
+  }
+
+  .flecha{
+    bottom: -80px;
+  }
+
+  .esencia-contenido {
+    flex-direction: column;
+  }
+
+  .esencia-imagen {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;      /* ✨ evita que se salga */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0 auto;        /* centra correctamente */
+  }
+
+  .esencia-texto {
+    padding: 0 10px;
+  }
+
+  .esencia-texto-2 {
+    padding: 40px 40px;
+    margin-top: -90px;
+  }
+
+  .chande {
+  text-align: center;
+  padding: 20px 10%;
+  color: #222;
+  min-height: 950px;
+  height: auto;
+  }
+
+  .chande h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .chande h2 span {
+    color: #000000;
+  }
+
+  .chande .subtitulo {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 50px;
+  }
+
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .tarjeta {
+    width: 80%;
+  }
+
+  .slider .list .item .content{
+    padding-right: 0;
+  }
+  .slider .list .item .content .title{
+    font-size: 50px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+}
