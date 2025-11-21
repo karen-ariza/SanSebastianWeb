@@ -370,11 +370,19 @@ section {
     right: 0;                /* <-- PEGADO A LA DERECHA */
     width: 50%;              /* <-- MITAD DE LA PANTALLA */
     height: calc(100% - 60px);
-    background-color: rgb(245, 207, 202);
+    background-color: #ffffff;
     padding: 20px 0;
     overflow-y: auto;
     border-left: 3px solid rgba(0,0,0,0.2); /* LÍNEA DECORATIVA */
     margin: 0; 
+  }
+
+  .submenu{
+    background: #10403B;
+  }
+
+  .submenu li a{
+    color: #ffffff;
   }
 
   .mi-nav-menu-item{
