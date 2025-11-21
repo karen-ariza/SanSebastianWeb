@@ -462,17 +462,30 @@ section {
   .mi-nav-menu {
     display: none;
     flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    background-color: rgb(245, 207, 202);
+    justify-content: center;
+    align-items: center;     /* <-- CENTRA LAS LETRAS */
+    
     position: fixed;
-    left: 0;
     top: 60px;
-    width: 100%;
-    padding: 20px 0;
-    /*scroll*/
+    right: 0;                /* <-- PEGADO A LA DERECHA */
+    
+    width: 50%;              /* <-- MITAD DE LA PANTALLA */
     height: calc(100% - 60px);
+
+    background-color: rgb(245, 207, 202);
+    padding: 20px 0;
     overflow-y: auto;
+
+    border-left: 3px solid rgba(0,0,0,0.2); /* LÍNEA DECORATIVA */
+    margin: 0;               /* <-- IMPORTANTE: elimina ese espacio */
+  }
+
+  /* Cada item centrado */
+  .mi-nav-menu-item {
+    width: 100%;             /* Para que pueda centrarse */
+    text-align: center;      /* CENTRA EL TEXTO */
+    line-height: 70px;
+    border-left: 3px solid rgba(0,0,0,0.2); /* Decorativo */
   }
 
   .mi-nav-menu-item{

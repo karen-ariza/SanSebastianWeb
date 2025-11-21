@@ -312,39 +312,137 @@ section {
   color: #ffffff80;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/*RESPONSIVE*/
 
 /* Tablets */
 @media (max-width: 900px) {
-    .madera-item {
-        flex-direction: column;
-        text-align: center;
-    }
+  .madera-item {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .madera-texto,
-    .madera-item img {
-        width: 100%;
-    }
+  .madera-texto,
+  .madera-item img {
+    width: 100%;
+  }
 
-    .madera-titulo {
-        font-size: 2.4rem;
-    }
+  .madera-titulo {
+    font-size: 2.4rem;
+  }
 }
 
 /* Celulares */
-@media (max-width: 600px) {
-    .madera-hero {
-        height: 270px;
-    }
+@media (max-width: 768px) {
 
-    .madera-titulo {
-        font-size: 2rem;
-        padding: 0 10px;
-    }
+  /* TEXTO ARRIBA — IMAGEN ABAJO EN CELULAR */
+  .madera-item,
+  .madera-item.invertir {
+    flex-direction: column !important;
+  }
 
-    .madera-contenido {
-        width: 95%;
-    }
+  .madera-item img {
+    order: 2; /* imagen abajo */
+  }
+
+  .madera-texto {
+    order: 1; /* texto arriba */
+  }
+
+  .hero-content {
+    margin-top: 100px;
+
+    /* NUEVO: Fuerza a que tome todo el espacio */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente si hay altura asignada */
+
+    /* Para que NO se quede a un solo lado */
+    text-align: center;
+
+    padding: 0 20px; /* opcional, evita que toque los bordes en móviles */
+  }
+
+  
+  .logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  /* Por defecto, el menú está oculto */
+  .mi-nav-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     /* <-- CENTRA LAS LETRAS */
+    position: fixed;
+    top: 80px;
+    right: 0;                /* <-- PEGADO A LA DERECHA */
+    width: 50%;              /* <-- MITAD DE LA PANTALLA */
+    height: calc(100% - 60px);
+    background-color: rgb(245, 207, 202);
+    padding: 20px 0;
+    overflow-y: auto;
+    border-left: 3px solid rgba(0,0,0,0.2); /* LÍNEA DECORATIVA */
+    margin: 0; 
+  }
+
+  .mi-nav-menu-item{
+   line-height: 70px; 
+  }
+
+  /*estilo en las letras cuando cambia el celular */  
+  .mi-nav-menu-link:hover{
+    background: none;
+    color: rgb(238, 10, 10);
+  }
+
+  /* Cuando el JS activa la clase .active, el menú se muestra */
+  .mi-nav-menu.active {
+    display: flex;
+  }
+
+  /*Mostrar el botón hamburguesa solo en móvil */
+  .mi-nav-menu-toggle {
+    display: block;
+  }
+
+  .madera-hero {
+    height: 270px;
+  }
+
+  .madera-titulo {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .madera-contenido {
+    width: 95%;
+  }
+
+  .madera-texto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .madera-texto p {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+
+  .madera-item {
+    flex-direction: column;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
 }

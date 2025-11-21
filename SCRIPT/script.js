@@ -28,6 +28,34 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   } catch (err) {
+    console.error("Error inicializando menú principal:", err);
+  }
+
+     // --- Cerrar menú al hacer clic en cualquier enlace ---
+  try {
+    const navMenu = document.querySelector(".mi-nav-menu");
+    const toggle = document.querySelector(".mi-nav-menu-toggle");
+    const icon = toggle ? toggle.querySelector('i') : null;
+
+    // Selecciona los enlaces del menú
+    const enlacesMenu = document.querySelectorAll(".mi-nav-menu a");
+
+    enlacesMenu.forEach(enlace => {
+      enlace.addEventListener("click", () => {
+
+        // Cierra el menú
+        navMenu.classList.remove("active");
+        toggle.classList.remove("rotate");
+
+        // Cambiar icono a hamburguesa
+        if (icon) {
+          icon.setAttribute("data-lucide", "menu");
+          if (typeof lucide !== "undefined" && lucide.createIcons) lucide.createIcons();
+        }
+
+      });
+    });
+  } catch (err) {
     console.error("Error inicializando menú:", err);
   }
 

@@ -334,4 +334,93 @@ section {
   .punto{ left: 12px; }
   .card{ padding: 14px; }
   .site-header h1{ font-size: 1.4rem; }
+
+  
+  .hero-content {
+    margin-top: 100px;
+
+    /* NUEVO: Fuerza a que tome todo el espacio */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente si hay altura asignada */
+
+    /* Para que NO se quede a un solo lado */
+    text-align: center;
+
+    padding: 0 20px; /* opcional, evita que toque los bordes en móviles */
+  }
+
+  .hero-content h2,
+  .hero-content p {
+    width: 100%;            /* Toman todo el ancho */
+    max-width: 100%;        /* Evita límites */
+  }
+
+
+  .hero-content{
+    font-size: 1em;   
+  }
+
+  .hero-content h2 {
+    font-size: 2em;
+  }
+
+  .hero-content p{
+    font-size: 1em;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+ 
+  /* Por defecto, el menú está oculto */
+  .mi-nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(245, 207, 202);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    /*scroll*/
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+
+  .mi-nav-menu-item{
+   line-height: 70px; 
+  }
+
+  /*estilo en las letras cuando cambia el celular */  
+  .mi-nav-menu-link:hover{
+    background: none;
+    color: rgb(238, 10, 10);
+  }
+
+  /* Cuando el JS activa la clase .active, el menú se muestra */
+  .mi-nav-menu.active {
+    display: flex;
+  }
+
+  /*Mostrar el botón hamburguesa solo en móvil */
+  .mi-nav-menu-toggle {
+    display: block;
+  }
+
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
 }

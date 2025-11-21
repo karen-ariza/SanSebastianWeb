@@ -1,7 +1,4 @@
-/* =======================
-        GENERAL
-======================= */
-
+/*GENERAL*/
 *{
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
@@ -385,110 +382,188 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+  body {
+    padding-top: 0;
+    height: auto;
+    margin: 0;
+  }
+
+  .header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+ 
+  /* Por defecto, el menú está oculto */
+  .mi-nav-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     /* <-- CENTRA LAS LETRAS */
+    
+    position: fixed;
+    top: 60px;
+    right: 0;                /* <-- PEGADO A LA DERECHA */
+    
+    width: 50%;              /* <-- MITAD DE LA PANTALLA */
+    height: calc(100% - 60px);
+
+    background-color: rgb(245, 207, 202);
+    padding: 20px 0;
+    overflow-y: auto;
+
+    border-left: 3px solid rgba(0,0,0,0.2); /* LÍNEA DECORATIVA */
+    margin: 0; 
+  }
+
+  .mi-nav-menu-item{
+   line-height: 70px; 
+  }
+
+  /*estilo en las letras cuando cambia el celular */  
+  .mi-nav-menu-link:hover{
+    background: none;
+    color: rgb(238, 10, 10);
+  }
+
+  /* Cuando el JS activa la clase .active, el menú se muestra */
+  .mi-nav-menu.active {
+    display: flex;
+  }
+
+  /*Mostrar el botón hamburguesa solo en móvil */
+  .mi-nav-menu-toggle {
+    display: block;
+  }
+
   /* HERO más pequeño y texto más chico */
-    .hero-tejidos {
-        height: 250px;
-        background-position: center;
-    }
+  .hero-tejidos {
+    height: 250px;
+    background-position: center;
+  }
 
-    .hero-title {
-        font-size: 1.8rem;
-        padding: 0 20px;
-    }
+  .hero-title {
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
 
-    /* FILAS: título → imagen → párrafo */
-    .fila, 
-    .fila.invertida {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  /* FILAS: título → imagen → párrafo */
+  .fila, 
+  .fila.invertida {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .fila-text {
-        width: 100%;
-    }
+  .fila-text {
+    width: 100%;
+  }
 
-    .fila-text h3 {
-        order: 1;
-        font-size: 1.4rem;
-    }
+  .fila-text h3 {
+    order: 1;
+    font-size: 1.4rem;
+  }
 
-    .fila-img {
-        order: 2;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .fila-img {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .fila-img img {
-        width: 70%;
-        max-width: 250px;
-        height: 160px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
+  .fila-img img {
+    width: 70%;
+    max-width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 
-    .fila-text p {
-        order: 3;
-        font-size: 0.95rem;
-        width: 95%;
-        margin: 0 auto;
-        text-align: justify;
-    }
+  .fila-text p {
+    order: 3;
+    font-size: 0.95rem;
+    width: 95%;
+    margin: 0 auto;
+    text-align: justify;
+  }
 
-    /* Galería → 1 columna */
-    /* Galería pasa a 1 columna */
-    .galeria {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+  /* Galería → 1 columna */
+  /* Galería pasa a 1 columna */
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
-    /* TODAS las primeras 4 fotos mismo tamaño */
-    .galeria-item img {
-        width: 100%;
-        height: 200px;     /* <-- Cambia este valor si quieres más grandes o más pequeñas */
-        object-fit: cover;
-    }
+  /* TODAS las primeras 4 fotos mismo tamaño */
+  .galeria-item img {
+    width: 100%;
+    height: 200px;     /* <-- Cambia este valor si quieres más grandes o más pequeñas */
+    object-fit: cover;
+  }
 
-    /* QUINTA foto centrada y más pequeña */
-    .foto-centro {
-        grid-column: 1 / 2;   /* Una columna en responsive */
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  /* QUINTA foto centrada y más pequeña */
+  .foto-centro {
+    grid-column: 1 / 2;   /* Una columna en responsive */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .foto-centro img {
-        width: 80%;      /* Tamaño más pequeño */
-        height: 200px;   /* Misma altura para armonía */
-        object-fit: cover;
-        border-radius: 10px;
-    }
+  .foto-centro img {
+    width: 80%;      /* Tamaño más pequeño */
+    height: 200px;   /* Misma altura para armonía */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .footer {
+  text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+
 }
 
-/* =======================
-      TABLET
-======================= */
+/*TABLET*/
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    /* HERO más proporcionado */
-    .hero-tejidos {
-        height: 300px;
-    }
+  /* HERO más proporcionado */
+  .hero-tejidos {
+    height: 300px;
+  }
 
-    .hero-title {
-        font-size: 2rem;
-    }
+  .hero-title {
+    font-size: 2rem;
+  }
 
-    /* Filas más compactas */
-    .fila, 
-    .fila.invertida {
-        padding: 30px 20px;
-        gap: 20px;
-    }
+  /* Filas más compactas */
+  .fila, 
+  .fila.invertida {
+    padding: 30px 20px;
+    gap: 20px;
+  }
 
     .fila-text h3 {
         font-size: 1.6rem;
@@ -507,8 +582,8 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Quinta imagen centrada */
-    .foto-centro img {
-        width: 65%;
-    }
+  /* Quinta imagen centrada */
+  .foto-centro img {
+    width: 65%;
+  }
 }

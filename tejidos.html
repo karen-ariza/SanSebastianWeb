@@ -8,39 +8,40 @@
 </head>
 <body>
 
-     <header class="header">
-        <nav class="mi-nav">
-            <div class="logo">
-                <img src="imagenes/Escudo.png" alt="Escudo" class="logo-img">
-                <span>San Sebastián de Buenavista</span>
-                </div>
+    <!-- HEADER -->
+  <header class="header">
+    <nav class="mi-nav">
+      <div class="logo">
+        <img src="imagenes/Escudo.png" alt="Escudo" class="logo-img">
+        <span>San Sebastián de Buenavista</span>
+      </div>
 
-            <button class="mi-nav-menu-toggle" aria-label="Abrir menú">
-                <i data-lucide="menu"></i>
-            </button>
-            <ul class="mi-nav-menu">
-                <li class="mi-nav-menu-item mi-nav-link"><a href="#Inicio" class="mi-nav-menu-link">Inicio</a></li>
-                <li class="mi-nav-menu-item mi-nav-link"><a href="#seccion-inferior" class="mi-nav-menu-link">Historia</a></li>
-                <li class="mi-nav-menu-item mi-nav-link"><a href="#cultura" class="mi-nav-menu-link">Cultura</a></li>
+      <button class="mi-nav-menu-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
 
-                <!--TURISMO con SUBMENÚ -->
-                <li class="mi-nav-menu-item mi-nav-link">
-                <a href="#" class="mi-nav-menu-link">Turismo ▾</a>
-                <ul class="submenu">
-                    <li><a href="#carrusel">Lugares emblematicos</a></li>
-                    <li><a href="#hotel">Hoteles</a></li>
-                    <li><a href="#gastronomia">Gastronomia</a></li>
-                    <li><a href="#artesania">Artesanias</a></li>
-                    <li><a href="#">Festividades</a></li>
-                </ul>
+      <ul class="mi-nav-menu">
+        <li class="mi-nav-menu-item mi-nav-link"><a href="index.html#Inicio" class="mi-nav-menu-link">Inicio</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="index.html#seccion-inferior" class="mi-nav-menu-link">Historia</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="index.html#cultura" class="mi-nav-menu-link">Cultura</a></li>
 
-                </li>
-                <li class="mi-nav-menu-item mi-nav-link"><a href="#" class="mi-nav-menu-link">Simbolo</a></li>
-                <li class="mi-nav-menu-item mi-nav-link"><a href="#" class="mi-nav-menu-link">Curiosidades</a></li>
-                <li class="mi-nav-menu-item mi-nav-link"><a href="#" class="mi-nav-menu-link">contacto</a></li>
-            </ul>
+        <!-- TURISMO SUBMENÚ -->
+        <li class="mi-nav-menu-item mi-nav-link">
+          <a href="#" class="mi-nav-menu-link">Turismo ▾</a>
+          <ul class="submenu">
+            <li><a href="index.html#carrusel">Lugares emblematicos</a></li>
+            <li><a href="index.html#hotel">Hoteles</a></li>
+            <li><a href="index.html#gastronomia">Gastronomia</a></li>
+            <li><a href="index.html#artesanias">Artesanias</a></li>
+            <li><a href="index.html#fiestas">Festividades</a></li>
+          </ul>
+        </li>
 
-        </nav>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="index.html#simbolos" class="mi-nav-menu-link">Simbolo</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="index.html#curiosidades" class="mi-nav-menu-link">Curiosidades</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="index.html#contactos" class="mi-nav-menu-link">contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
     <!-- LOADER -->
@@ -207,11 +208,15 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <script>
         window.addEventListener("load", () => {
             document.getElementById("loader").style.display = "none";
         });
     </script>
+    
+    <script src="SCRIPT/script.js"></script>
 
 </body>
 </html>
