@@ -1,5 +1,11 @@
-
 /* Sección hotel */
+*{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 .hotel-section {
   box-sizing: border-box;
   text-align: center;

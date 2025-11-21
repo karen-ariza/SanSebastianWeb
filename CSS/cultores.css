@@ -3,7 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
+
 
 body {
   background: #f8f8f8;
@@ -11,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -102,7 +106,7 @@ section {
 .submenu{
   display: none;
   position: absolute;
-  background-color: #f2c700;
+  background: linear-gradient(90deg, #e39a9a, #f2d68b, #9acfa5, #b5dcff);
   list-style: none;
   padding: 10px 0;
   margin: 0;
@@ -242,7 +246,6 @@ section {
   background: #0a0a0a;
   color: #fff;
   padding: 50px 0 20px;
-  font-family: 'Poppins', sans-serif;
   margin-top: 80px;
   width: 100vw;
   margin-left: calc(-50vw + 50%);

@@ -1,52 +1,228 @@
-/* ================================ */
-/*         SECCIÓN ESENCIA          */
-/* ================================ */
-.esencia {
-  padding: 60px 20px;
+
+/*SECCIÓN ESENCIA*/
+
+*{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
+.esencia{
+  background: linear-gradient(90deg, #ffffff, #fc989186);
+}
 .esencia-container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  
 }
 
 .esencia-texto h2 {
   font-size: 2.2em;
+  margin-bottom: 15px;
+  margin-top: 40px;
   font-weight: bold;
   color: #c62828;
-  margin-bottom: 15px;
+  text-align: center;
 }
 
 .esencia-texto p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .esencia-contenido {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
   flex-wrap: wrap;
+  gap: 80px;
+  text-align: justify;
 }
 
 .esencia-imagen {
   flex: 1;
-  height: 350px;
   background-image: url('../imagenes/calle.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;
   border-radius: 10px;
+  overflow: hidden;
+  margin-left: -5%;
+  width: calc(100% + 10%);
 }
 
 .esencia-texto-2 {
   flex: 1;
   max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  padding: 45px 40px;
+  color: #000000;
+}
+
+.esencia-texto-2 h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #c62828;
+  margin-bottom: 15px;
 }
 
 .esencia-texto-2 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin-bottom: 25px;
   text-align: justify;
-  margin-bottom: 20px;
+  color: #000000;
+}
+
+.btn-esencia {
+  background-color: #e41b17;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn-esencia:hover {
+  background-color: #b71511;
+}
+
+/* HEADER */
+
+/* MODAL ESENCIA (CORRECTO Y ÚNICO)*/
+.modal-esencia {
+  display: none;               
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  text-align: justify;
+  z-index: 9999;
+  /* 💥 Evita bloquear botones cuando está cerrado */
+  pointer-events: none;
+  /* Para centrar contenido al mostrarse */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-esencia.show {
+  display: flex;
+
+  /* Ahora sí recibe clics */
+  pointer-events: auto;
+}
+
+/* CUERPO DEL MODAL */
+.modal-esencia-contenido {
+  background: #fff;
+  width: 90%;
+  max-width: 650px;
+  border-radius: 16px;
+  overflow: hidden;
+  animation: modalFade 0.35s ease;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+}
+
+/* ANIMACIÓN */
+@keyframes modalFade {
+  from { opacity: 0; transform: translateY(-25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+.modal-esencia-header {
+  background: #ffc400;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-esencia-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* X DE CERRAR */
+.modal-esencia-x {
+  font-size: 26px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+/* BODY */
+.modal-esencia-body {
+  padding: 20px 25px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+/* BOTÓN CERRAR */
+.modal-esencia-btn {
+  padding: 8px 20px;
+  background: #666;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-esencia-btn:hover {
+  background: #4a4a4a;
+}
+
+/* BOTÓN DE LA SECCIÓN (personalizable) */
+.btn-esencia {
+  background-color: #e41b17;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-esencia:hover {
+  background-color: #b71511;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+  .esencia-contenido {
+    flex-direction: column;
+  }
+
+  .esencia-imagen {
+    min-height: 60vh;
+    display: block !important;         /* obliga a comportarse como bloque */
+    width: calc(100% - 30px) !important; /* deja espacio a los lados */
+    margin: 0 auto !important;         /* centra */
+    border-radius: 12px !important;    /* opcional */
+    overflow: hidden !important;
+  }
+
+  .esencia-texto {
+    padding: 0 10px;
+  }
+
+  .esencia-texto-2 {
+    padding: 40px 40px;
+    margin-top: -90px;
+    max-width: 900px;
+  }
 }

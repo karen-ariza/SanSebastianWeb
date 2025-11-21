@@ -8,6 +8,42 @@
 </head>
 <body>
 
+    <!-- HEADER -->
+  <header class="header">
+    <nav class="mi-nav">
+      <div class="logo">
+        <img src="imagenes/Escudo.png" alt="Escudo" class="logo-img">
+        <span>San Sebastián de Buenavista</span>
+      </div>
+
+      <button class="mi-nav-menu-toggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <ul class="mi-nav-menu">
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#Inicio" class="mi-nav-menu-link">Inicio</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#seccion-inferior" class="mi-nav-menu-link">Historia</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#cultura" class="mi-nav-menu-link">Cultura</a></li>
+
+        <!-- TURISMO SUBMENÚ -->
+        <li class="mi-nav-menu-item mi-nav-link">
+          <a href="#" class="mi-nav-menu-link">Turismo ▾</a>
+          <ul class="submenu">
+            <li><a href="#carrusel">Lugares emblematicos</a></li>
+            <li><a href="#hotel">Hoteles</a></li>
+            <li><a href="#gastronomia">Gastronomia</a></li>
+            <li><a href="#artesanias">Artesanias</a></li>
+            <li><a href="#fiestas">Festividades</a></li>
+          </ul>
+        </li>
+
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#simbolos" class="mi-nav-menu-link">Simbolo</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#curiosidades" class="mi-nav-menu-link">Curiosidades</a></li>
+        <li class="mi-nav-menu-item mi-nav-link"><a href="#contactos" class="mi-nav-menu-link">contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
     <!-- HERO CON IMAGEN DE FONDO + TÍTULO ENCIMA -->
     <section class="madera-hero">
         <h1 class="madera-titulo">ARTESANÍAS EN MADERA</h1>
@@ -78,9 +114,40 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 Artesanías de San Sebastián de Buenavista</p>
-    </footer>
+    <footer id="contactos" class="footer">
+        <div class="footer-container">
+        <div class="footer-col">
+            <h3>San Sebastián de Buenavista</h3>
+            <p>Tierra del Chandé, cultura, tradición y naturaleza.</p>
+            <img src="../imagenes/Escudo.png" alt="Escudo" class="footer-logo">
+        </div>
 
+        <div class="footer-col">
+            <h4>Enlaces rápidos</h4>
+            <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Turismo</a></li>
+            <li><a href="#">Símbolo</a></li>
+            <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>📍 San Sebastián de Buenavista, Magdalena</p>
+            <p>📧 info@sansebastian.gov.co</p>
+            <p>📞 +57 300 000 0000</p>
+        </div>
+
+        </div>
+
+        <div class="footer-bottom">
+        <p>© 2025 San Sebastián de Buenavista | Todos los derechos reservados</p>
+        </div>
+    </footer> 
+
+   
 </body>
 </html>

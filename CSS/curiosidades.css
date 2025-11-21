@@ -1,6 +1,14 @@
 /* ================================
    SECCIÓN CURIOSIDADES 3D
 ================================ */
+
+*{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 .curiosidades {
     width: 100%;
     padding: 60px 0;
@@ -101,6 +109,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.titulo-color h3{
+    font-family: "Bebas Neue", sans-serif !important; 
 }
 
 /* Frase secundaria */

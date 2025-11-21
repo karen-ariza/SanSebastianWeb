@@ -1,5 +1,10 @@
-/* Reset ligero */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+
+* { 
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 
 :root{
   --bg: #fff6e7;
@@ -11,7 +16,8 @@
 }
 
 body{
-  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
@@ -19,10 +25,135 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
+.header{
+  background: linear-gradient(90deg, #e39a9a, #f2d68b, #9acfa5, #b5dcff);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+section {
+  margin-bottom: 0px; /* espacio inferior entre secciones */
+}
+
+.mi-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.mi-nav-link{
+  color: black;
+  text-decoration: none;
+}
+
+.mi-nav-link a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 50px;
+}
+
+.logo-img{
+  width: 40px;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: -4px; /* Ajusta este valor según necesites */
+}
+
+.mi-nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.mi-nav-menu-item{
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.mi-nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.mi-nav-menu-link:hover{
+  background-color: #013220;
+  color: white;
+  transition: 0.5s;
+}
+
+.mi-nav-menu-toggle{
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+.submenu{
+  display: none;
+  position: absolute;
+  background: linear-gradient(90deg, #e39a9a, #f2d68b, #9acfa5, #b5dcff);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.submenu li{
+  padding: 8px 20px;
+}
+
+.submenu li a{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 4px 10px;
+  line-height: 1.2;
+}
+
+.submenu li a:hover {
+  background-color: #013220;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.mi-nav-menu-item:hover .submenu {
+  display: block;
+}
+
+/* Asegura que el li padre tenga posición relativa */
+.mi-nav-menu-item {
+  position: relative;
+}
+
 /* Cabecera */
 .site-header {
   text-align: center;
-  padding: 28px 16px 8px;
+  padding: 120px 16px 8px;
 }
 .site-header h1{
   color: var(--accent);
@@ -37,12 +168,12 @@ body{
 }
 
 .img-chande {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 12px;
-    object-fit: cover;
-    max-height: 280px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 280px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 /* CONTENEDOR TIMELINE */
@@ -118,6 +249,83 @@ body{
   opacity: 1;
   transform: translateY(0);
 }
+
+/*FOOTER ESTILOS */
+.footer {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 50px 0 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 80px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Títulos del footer */
+.footer h3,
+.footer h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fbc02d; /* Amarillo similar al que usas */
+}
+
+/* Logo del footer */
+.footer-logo {
+  width: 90px;
+  margin-top: 10px;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+}
+
+/* Párrafos */
+.footer p {
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Enlaces */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffffb3;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fbc02d;
+  text-decoration: underline;
+}
+
+/* Parte inferior */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff30;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #ffffff80;
+}
+
 
 /* Responsive */
 @media (max-width:720px){

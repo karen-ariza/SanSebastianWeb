@@ -1,6 +1,14 @@
 /* ============================================================
-   1. CONTENEDOR GENERAL
-   ============================================================ */
+1. CONTENEDOR GENERAL
+============================================================ */
+
+*{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 .simbolos-container {
     padding: 40px 20px 100px;
     background: #e4f3ff;
