@@ -11,19 +11,22 @@
     position: relative;
     padding: 20px 20px;
     overflow: hidden;
-    background: linear-gradient(to right, #fcb6a6, #ffe695, #b2ffd2);
+    background: linear-gradient(to right, #eb9090, #c9f7dc);
 }
 /* TÍTULO PRINCIPAL */
 .fiestas-fondo h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.0rem;
+    font-size: 2.8rem;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 8px;
     color: #b30000;
     letter-spacing: 0.6px;
-    font-weight: 700;
+    font-weight: 800;
     animation: titleIn 0.8s ease both;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* SUBTÍTULO (CORREGIDO) */

@@ -22,8 +22,11 @@
 .titulo-curiosidades {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #111;
+    color: #550000;
     text-align: center;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Área del slider */
@@ -90,6 +93,7 @@
     text-align: center;
     margin-top: 90px;
     animation: fadeIn 1.5s ease-in-out;
+    
 }
 
 /* Título multicolor animado */
@@ -109,11 +113,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.titulo-color h3{
-    font-family: "Bebas Neue", sans-serif !important; 
-}
 
 /* Frase secundaria */
 .frase-secundaria {

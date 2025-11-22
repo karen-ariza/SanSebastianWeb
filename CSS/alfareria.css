@@ -179,11 +179,14 @@ section {
     font-size: 2rem;
     margin-bottom: 15px;
     text-align: center;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .tarjeta-texto p {
     color: #5b4638;
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     line-height: 1.7;
     text-align: justify;
 }

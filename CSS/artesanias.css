@@ -5,14 +5,8 @@
   font-style: normal;
 }
 
-body {
-  background-color: #f0f0f0;
-  color: #443200;
-  line-height: 1.6;
-    
-}
 .artesanias-section {
-  background: linear-gradient(to right, #fff385, #ffffff);
+  background: linear-gradient(to right, #e4dfb3, #ffffff);
   padding: 20px 10px;
   margin-top: 100px;
   margin: 10px 0 50px 0;
@@ -28,13 +22,16 @@ body {
   padding: 0 20px;
 }
 .intro-artesanias h2 {
-  font-size: 2.5em;
-  font-weight: 600;
+  font-size: 2.8em;
+  font-weight: 800;
   color: #473100;
   margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .intro-artesanias p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: 'sans-serif', sans-serif;
   color: #000000;
   margin: 0 auto;

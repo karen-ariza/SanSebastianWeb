@@ -207,6 +207,9 @@ section {
 .historia h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -232,7 +235,8 @@ section {
     text-align: center;
 }
 .fila-text p {
-    margin-top: -60px;   /* Súbelo un poquito */
+    margin-top: -60px; 
+    font-size: 1.2em;  /* Súbelo un poquito */
 }
 
 .fila-img {
@@ -293,6 +297,9 @@ section {
     text-align: center;
     margin-bottom: 15px; /* separación del video */
     font-size: 2.2rem;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* HACER EL VIDEO RESPONSIVE */

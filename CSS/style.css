@@ -173,18 +173,17 @@ section {
   color: rgb(255, 217, 0);
   text-align: center;
   max-width: 80%;
-  font-family: 'Times New Roman', Times, serif;
   margin-top: 180px;
   transform: translateY(-50px);
 }
 
 .hero-content h2 {
-  font-size: 3.7em;
+  font-size: 3.5em;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  font-style: normal;
   margin-bottom: 15px;
   margin-top: -50px;
-  font-family: "fantasy", copperplate;
 }
 
 .hero-content p {
@@ -223,21 +222,28 @@ section {
   color: #222;
   height: auto;
   min-height: 950px;
+  
 }
 
 .chande h2 {
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .chande h2 span {
-  color: #000000;
+  color: #fa5c00;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .chande .subtitulo {
   font-size: 1.5em;
-  color: #555;
+  color: #000000;
   margin-bottom: 50px;
 }
 
@@ -268,7 +274,7 @@ section {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-bottom: 3px solid #6b4ce6; /* línea decorativa */
+  border-bottom: 3px solid #f73605; /* línea decorativa */
 }
 
 .tarjeta h3 {
@@ -279,7 +285,7 @@ section {
 
 .btn-ver {
   display: inline-block;
-  background-color: #0000ffbb;
+  background-color: #f87000;
   color: white;
   font-size: 0.9rem;
   text-decoration: none;
@@ -290,7 +296,7 @@ section {
 }
 
 .btn-ver:hover {
-  background-color: #0000ff;
+  background-color: #ff5100;
 }
 
 .descripcion {

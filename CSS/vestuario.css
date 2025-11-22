@@ -153,13 +153,16 @@ section {
 }
 
 .instrumentos h1 {
-  font-size: 2.3em;
-  color: #0c4c36;
+  font-size: 2.8em;
+  color: #ff0000;
   margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .instrumentos p {
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: #444;
   max-width: 900px;
   margin: 0 auto;

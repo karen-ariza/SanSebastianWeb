@@ -7,7 +7,6 @@
   font-weight: weight;
   font-style: normal;
 }
-
 .esencia{
   background: linear-gradient(90deg, #ffffff, #fc989186);
 }
@@ -20,16 +19,22 @@
 }
 
 .esencia-texto h2 {
-  font-size: 2.2em;
+  font-size: 2.8em;
   margin-bottom: 15px;
   margin-top: 40px;
   font-weight: bold;
-  color: #c62828;
   text-align: center;
+  color: #f30101 ;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .esencia-texto p {
-  font-size: 1.3em;
+  font-size: 1.4em;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 60px;
 }
@@ -67,34 +72,18 @@
   color: #000000;
 }
 
-.esencia-texto-2 h3 {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #c62828;
-  margin-bottom: 15px;
-}
 
 .esencia-texto-2 p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   line-height: 1.5;
   margin-bottom: 25px;
   text-align: justify;
   color: #000000;
 }
 
-.btn-esencia {
-  background-color: #e41b17;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: .3s ease;
-}
 
-.btn-esencia:hover {
-  background-color: #b71511;
-}
+
+
 
 /* HEADER */
 
