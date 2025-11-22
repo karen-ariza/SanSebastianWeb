@@ -155,6 +155,7 @@ section {
   text-align: center;
   padding: 120px 16px 8px;
 }
+
 .site-header h1{
   color: var(--accent);
   font-size: 1.9rem;
@@ -162,8 +163,8 @@ section {
   text-shadow: 1px 1px 0 rgba(255, 199, 120, .4);
 }
 .subtitle{
-  color: #5b3b2a;
-  font-size: 0.95rem;
+  color: #000000;
+  font-size: 1.5rem;
   opacity: 0.9;
 }
 
@@ -421,6 +422,10 @@ section {
   /*Mostrar el botón hamburguesa solo en móvil */
   .mi-nav-menu-toggle {
     display: block;
+  }
+
+  .subtitle{
+    font-size: 1.2rem;
   }
 
 
