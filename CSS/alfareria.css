@@ -157,25 +157,21 @@ section {
     100% { transform: translateY(0); opacity: 1; }
 }
 
-/* ===========================
-   ONDA DECORATIVA
-=========================== */
+/*ONDA DECORATIVA */
 .onda-separador {
     margin-top: -80px;
 }
 
-/* ===========================
-   TARJETA DE TEXTO PRINCIPAL
-=========================== */
+/* ARJETA DE TEXTO PRINCIPAL*/
 .tarjeta-texto {
-    width: 85%;
-    max-width: 900px;
-    margin: 40px auto;
-    background: #f7eee6;
-    padding: 35px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(120, 70, 35, 0.25);
-    animation: fadeUp 1.2s ease;
+  width: 85%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f7eee6;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(120, 70, 35, 0.25);
+  animation: fadeUp 1.2s ease;
 }
 
 .tarjeta-texto h2 {

@@ -6,20 +6,19 @@
 }
 
 body {
-    background-color: #f0f0f0;
-    color: #443200;
-    line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #443200;
+  line-height: 1.6;
     
 }
 .artesanias-section {
-    background: linear-gradient(to right, #fff385, #ffffff);
-    padding: 20px 10px;
-    margin-top: 100px;
-    margin: 10px 0 50px 0;
-    margin-bottom: -0.5px;
-    
-    
+  background: linear-gradient(to right, #fff385, #ffffff);
+  padding: 20px 10px;
+  margin-top: 100px;
+  margin: 10px 0 50px 0;
+  margin-bottom: -0.5px;
 }
+
 .intro-artesanias {
   text-align: center;
   margin: 60px auto 40px;

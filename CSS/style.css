@@ -279,7 +279,7 @@ section {
 
 .btn-ver {
   display: inline-block;
-  background-color: #6b4ce6;
+  background-color: #0000ffbb;
   color: white;
   font-size: 0.9rem;
   text-decoration: none;
@@ -290,7 +290,7 @@ section {
 }
 
 .btn-ver:hover {
-  background-color: #5337c9;
+  background-color: #0000ff;
 }
 
 .descripcion {
